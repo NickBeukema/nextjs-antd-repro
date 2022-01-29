@@ -1,0 +1,16 @@
+{
+  "name": "nextjs-antd-repro",
+  "version": "1.0.0",
+  "private": "true",
+  "main": "index.js",
+  "author": "Nick Beukema <nick.beukema@gmail.com>",
+  "license": "MIT",
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}

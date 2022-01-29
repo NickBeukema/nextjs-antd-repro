@@ -1,0 +1,28 @@
+{
+    "extends": "./tsconfig.build.json",
+    "compileOnSave": false,
+    "compilerOptions": {
+      "target": "esnext",
+      "module": "esnext",
+      "jsx": "preserve",
+      "baseUrl": ".",
+      "typeRoots": ["./node_modules/@types"],
+      "lib": ["dom", "es2015", "es2016"],
+      "noEmit": true,
+      "plugins": [
+        {
+          "name": "typescript-plugin-css-modules",
+          "options": {
+            "rendererOptions": {
+              "less": {
+                "javascriptEnabled": true
+              }
+            }
+          }
+        }
+      ]
+    },
+    "exclude": ["node_modules", "cypress"],
+    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
+  }
+  

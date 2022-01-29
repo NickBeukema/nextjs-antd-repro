@@ -1,0 +1,167 @@
+@import (reference) "../../node_modules/antd/dist/antd.less";
+
+// Common Colors Used
+@charcoal: #262724;
+@light-grey-blue: #acb0b1;
+@duck-egg-blue: #dfe3e2;
+@white: #ffffff;
+@gunmetal: #686c6b;
+@sage: #85bb65;
+@light-sage: rgba(133, 187, 101, 0.2);
+@ice-blue: #f8f9f9;
+@general-red: rgb(211, 44, 44);
+@light-grey: @secondary-4;
+@mulled-wine: #53486e;
+
+// VARIABLES FROM ANT ///////////////////////////////////////////////
+
+// List of defaults: https://github.com/ant-design/ant-design/blob/master/components/style/themes/default.less
+// -------- Colors -----------
+// @primary-color: @blue-6;
+// @info-color: @blue-6;
+// @success-color: @green-6;
+// @processing-color: @blue-6;
+// @error-color: @red-5;
+// @highlight-color: @red-5;
+// @warning-color: @gold-6;
+// @normal-color: #d9d9d9;
+// @black: #000;
+
+@primary-color: @sage;
+@text-color: @charcoal;
+@secondary-text-color: #6a6a6a;
+
+@layout-body-background: @white;
+@layout-header-background: @white;
+@layout-footer-background: @secondary-1;
+@layout-header-padding: 0 30px;
+
+// Use our own variables for header height since it
+// can change at different breakpoints
+@header-height: 70px;
+@header-height-sm: 60px;
+
+// This is a lie.
+//
+// The footer has content from Contentful so it's potentially variably sized.
+// This variable isn't really its height as much as it represents the minimum
+// amount of footer we'll see when the content is too small to fill the body.
+//
+// It's a tradeoff between being so small that we lose most of it, or so large
+// we see blank spaces below.
+@footer-height: 75px;
+@layout-footer-background: @charcoal;
+
+// Global Variables
+@padding-md: 16px;
+
+// Button Variables
+@btn-border-radius-base: 4px;
+@btn-height-base: 40px;
+@btn-height-lg: 46px;
+@btn-height-sm: 30px;
+@btn-padding-horizontal-base: @padding-md + 20px;
+
+@btn-default-color: @primary-color;
+@btn-default-border: @primary-color;
+
+@disabled-bg: #e1e4e3;
+@btn-disable-border: @disabled-bg;
+@btn-default-ghost-color: @gunmetal;
+@btn-link-ghost-color: @gunmetal;
+
+// Tag Variables
+@tag-default-bg: transparent;
+@tag-default-color: @light-grey-blue;
+
+// Tab Variables
+@tabs-highlight-color: @text-color;
+@tabs-horizontal-margin: 0 50px 0 0;
+@tabs-horizontal-padding-lg: 10px 0;
+@tabs-bar-margin: 0 0 36px 0;
+
+@font-family: Roboto;
+
+// Breakpoint values
+@screen-sm: 576px;
+@screen-md: 768px;
+@screen-lg: 992px;
+@screen-xl: 1440px;
+
+// Aliases for breakpoint values
+@phone: @screen-sm;
+@tablet: @screen-md;
+@desktop: @screen-lg;
+@large-desktop: @screen-xl;
+
+@font-size-base: 16px;
+@line-height-base: 1.5em;
+
+// Checkbox variables
+@checkbox-size: 24px;
+
+// Radio variables
+@radio-size: 24px;
+
+// Buttons
+@btn-padding-horizontal-base: 12px;
+
+// Select variables
+@select-item-selected-font-weight: 400;
+@select-item-selected-bg: @highlight-color;
+@select-item-active-bg: @highlight-color;
+
+// Modal
+@modal-body-padding: 30px;
+
+// OUR OWN VARIABLES ///////////////////////////////////////////////
+
+@header-font-family: "DM Serif Display", serif;
+
+// General Usage
+@subdued-text-color: @light-grey-blue;
+
+// Color palette of secondary colors (grays). Apparently ant doesn't define this
+// for us?!
+@secondary-1: #f7f7f7;
+@secondary-2: #909090;
+@secondary-3: #848484;
+// #808080 on white fails Google's contrast checker
+@secondary-4: #707070;
+@secondary-5: #787878;
+@secondary-6: @secondary-text-color;
+@secondary-7: #4a4a4a; // filling this in for completeness; can pick a unique val later if desired
+@secondary-8: #4a4a4a;
+@secondary-9: #414141;
+@secondary-10: #323232;
+
+@highlight-color: #f8faf4;
+@border-color: #d8d8d8;
+@hr-color: #f0f0f0;
+
+@stock-increase-color: @primary-color;
+@stock-decrease-color: @general-red;
+
+// Tooltips
+@tooltip-background-color: @white;
+@tooltip-border-color: #ccc;
+
+// Navigation
+@nav-link-color: @charcoal;
+@nav-account-link-color: #686c6b;
+
+// Tables
+@table-border-color: @duck-egg-blue;
+@table-text-color: @charcoal;
+
+//Typography
+@hero-font-size: 42px;
+@hero-font-size-tablet: 50px;
+@hero-font-size-desktop: 80px;
+@hero-font-weight: 400;
+
+//Sidebar
+@ad-sidebar-max-width: 300px;
+
+//Shadows
+@soft-high-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.1);

@@ -1,0 +1,24 @@
+{
+    "extends": "../../tsconfig.base.json",
+    "compilerOptions": {
+      "composite": true,
+      "target": "ES5",
+      "isolatedModules": true,
+      "lib": ["dom", "es2015", "ES2015.Collection", "ES2015.Iterable", "es2019"],
+      "downlevelIteration": true,
+      // This would be nice, but for some reason the test server isn't processed
+      // right when this is enabled.
+      "importHelpers": false,
+    //   "types": ["jest"],
+      "typeRoots": ["node_modules/@types", "../../node_modules/@types"],
+      "baseUrl": ".",
+      "paths": {
+        "source/*": ["source/*"],
+        "components/*": ["components/*"],
+        "$gql/*": ["graphql/*"]
+      }
+    },
+    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pdf-worker.js"],
+    "exclude": ["node_modules", "cypress"]
+  }
+  

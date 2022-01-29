@@ -1,0 +1,32 @@
+node_modules
+.next
+cypress/videos
+cypress/screenshots
+.env
+yarn-error.log
+dist
+
+.DS_Store
+
+# Generated files
+**/*.gen.ts
+**/*.gen.tsx
+
+static-templates/output/
+/tmp
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+newrelic_agent.log
+
+.vercel
+build
+
+tsconfig.tsbuildinfo
+.npmrc
+
+lerna-debug.log
+
+auth.json
+tmp
